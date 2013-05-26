@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Bem vindo, {{ user.name|default:"e se autentique agora mesmo" }}!</h1>
+
+<div>
+  <form>
+    <fieldset>
+      <legend>Login</legend>
+      <label>Label name</label>
+      <input type="text" placeholder="Type something…">
+      <span class="help-block">Example block-level help text here.</span>
+      <label class="checkbox">
+        <input type="checkbox"> Check me out
+      </label>
+      <button type="submit" class="btn">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+<div class="span5">
+
+  <button class="btn btn-primary" >Login no Facebook</button>
+  <button class="btn btn-primary" >Login no Twitter</button>
+  <button class="btn btn-primary" >Login no GitHub</button>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+.social-signup .connect-button a, .green-button {
+	display: block;
+	cursor: pointer;
+	margin: 0 0 20px 0;
+	background-color: #92C929;
+	background-image: linear-gradient(top, #92C929, #6BB135);
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px rgba(0,0,0, .2);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	border: 1px solid #6BB135;
+	color: #fff;
+	font-weight: 300;
+	font-size: 14px;
+	padding: 5px 7px 5px 7px;
+	text-align: center;
+	margin-top: 0px;
+}
