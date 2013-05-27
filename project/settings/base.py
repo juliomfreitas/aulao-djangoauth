@@ -132,6 +132,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'south',
     'project.authsystem',
+
+    'facebook_connect',
 )
 
 # A sample logging configuration. The only tangible logging

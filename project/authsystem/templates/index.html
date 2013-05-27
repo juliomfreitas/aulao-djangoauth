@@ -1,8 +1,14 @@
 {% extends "base.html" %}
+{% load facebook_connect %}
+
+
+{% block scripts %}
+  {% facebook_script %}
+{% endblock scripts %}
+
 
 {% block content %}
-<h1>Bem vindo, {{ user.name|default:"e se autentique agora mesmo" }}!</h1>
-
+<h1>Bem vindo, <span id="username">{{ user.first_name|default:"e se autentique agora mesmo" }}!</span></h1>
 <div>
   <form>
     <fieldset>
@@ -19,10 +25,8 @@
 </div>
 
 <div class="span5">
-
-  <button class="btn btn-primary" >Login no Facebook</button>
+  {% facebook_button %}     
   <button class="btn btn-primary" >Login no Twitter</button>
   <button class="btn btn-primary" >Login no GitHub</button>
-    
 </div>
 {% endblock %}

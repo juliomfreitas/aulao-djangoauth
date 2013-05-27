@@ -1,5 +1,16 @@
 from .base import *
 
+
+
+FACEBOOK_LOGIN_REDIRECT = "/"                              # (optional, defaults to "/")
+FACEBOOK_APP_ID = "534045253320052"               # required
+FACEBOOK_APP_SECRET = "ba2eb76f03b61f60c54dd2148f34d846"  # required
+FACEBOOK_SCOPE = "email"                                   # (optional, defaults to "email")
+
+
+
+
+
 DEBUG = TEMPLATE_DEBUG = True
 
 DATABASES = {
