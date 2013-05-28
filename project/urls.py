@@ -6,6 +6,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
+    url(r'', include('social_auth.urls')),
 	(r'^twitter/', include('twython_django_oauth.urls')),
     url(r'^$', include("project.authsystem.urls")),
     (r'^facebook_connect/', include('facebook_connect.urls')),

@@ -19,6 +19,23 @@ LOGOUT_REDIRECT_URL='/'
 
 
 
+LINKEDIN_CONSUMER_KEY        = '0s6cm6ddidl0'
+LINKEDIN_CONSUMER_SECRET     = 'btqB3yb6Lsw4ZBn9'
+
+GOOGLE_OAUTH2_CLIENT_ID = '1098155654287.apps.googleusercontent.com'
+GOOGLE_OAUTH2_CLIENT_SECRET = 'GUxyapMCsYyGn1Ugrg4hk_L4'
+
+GITHUB_APP_ID = ''
+GITHUB_API_SECRET = ''
+
+DROPBOX_APP_ID = ''
+DROPBOX_API_SECRET = ''
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.contrib.linkedin.LinkedinBackend',
+    'social_auth.backends.google.GoogleOAuth2Backend',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 
 

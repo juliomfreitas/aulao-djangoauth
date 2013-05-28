@@ -135,6 +135,7 @@ INSTALLED_APPS = (
 
     'facebook_connect',
     'twython_django_oauth',
+    'social_auth',
 )
 
 # A sample logging configuration. The only tangible logging
