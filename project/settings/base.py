@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'project.authsystem',
 
     'facebook_connect',
+    'twython_django_oauth',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -8,7 +8,7 @@
 
 
 {% block content %}
-<h1>Bem vindo, <span id="username">{{ user.first_name|default:"e se autentique agora mesmo" }}!</span></h1>
+<h1>Bem vindo, <span id="username">{{ user }}!</span></h1>
 <div>
   <form>
     <fieldset>
@@ -25,8 +25,8 @@
 </div>
 
 <div class="span5">
-  {% facebook_button %}     
-  <button class="btn btn-primary" >Login no Twitter</button>
+  {% facebook_button %}     <br />
+  <a class="btn btn-primary" href="/twitter/login/">Login no Twitter</a> 
   <button class="btn btn-primary" >Login no GitHub</button>
 </div>
 {% endblock %}

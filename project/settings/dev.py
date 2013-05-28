@@ -2,10 +2,23 @@ from .base import *
 
 
 
-FACEBOOK_LOGIN_REDIRECT = "/"                              # (optional, defaults to "/")
-FACEBOOK_APP_ID = "534045253320052"               # required
-FACEBOOK_APP_SECRET = "ba2eb76f03b61f60c54dd2148f34d846"  # required
-FACEBOOK_SCOPE = "email"                                   # (optional, defaults to "email")
+FACEBOOK_LOGIN_REDIRECT = "/"                                # (optional, defaults to "/")
+FACEBOOK_APP_ID = "534045253320052"                          # required
+FACEBOOK_APP_SECRET = "ba2eb76f03b61f60c54dd2148f34d846"     # required
+FACEBOOK_SCOPE = "email"                                     # (optional, defaults to "email")
+
+
+
+
+TWITTER_KEY = 'LSTsYXf46Yn6DtjbvWB9BQ'
+TWITTER_SECRET = 'Xs90e9A0ournoVry2fbVWVzDxzzSwtDjjUrP4qszE'
+LOGIN_URL='/twitter/login'
+LOGOUT_URL='/twitter/logout'
+LOGIN_REDIRECT_URL='/'
+LOGOUT_REDIRECT_URL='/'
+
+
+
 
 
 

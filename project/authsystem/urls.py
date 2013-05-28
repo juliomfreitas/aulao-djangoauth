@@ -1,6 +1,4 @@
-from django.conf.urls import patterns, url
-
-
+from django.conf.urls import patterns, url, include
 from project.authsystem import views
 
 urlpatterns = patterns('',
